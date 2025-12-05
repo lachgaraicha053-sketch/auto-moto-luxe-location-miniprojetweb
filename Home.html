@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Location de voitures et motos de luxe à Marrakech. Découvrez notre collection exclusive de véhicules premium.">
+    <meta name="keywords" content="location voiture luxe, location moto, Marrakech, véhicules premium, location auto, location moto sportive">
+    <title>Auto Moto Luxe Location - Excellence Automobile à Marrakech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo auto moto.png">
+</head>
+<body>
+    <!-- Header Principal FIXE -->
+    <header class="fixed-header">
+        <div class="header-background"></div>
+        <div class="header-content">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="images/logo auto moto.png" alt="Logo Auto Moto Luxe" loading="lazy">
+                </div>
+            </div>
+            <h1 class="header-title">AUTO MOTO LUXE Location</h1>
+            <p class="header-subtitle">L'excellence automobile et motocycliste à portée de main</p>
+            <div class="header-stats">
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Véhicules Premium</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">15</span>
+                    <span class="stat-label">Marques Exclusives</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Clients Satisfaits</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Espace pour compenser le header fixe -->
+    <div class="header-spacer"></div>
+
+    <!-- Navigation -->
+    <nav class="sticky-nav">
+        <div class="nav-container">
+            <!-- Logo de navigation -->
+            <div class="nav-logo">
+                <span class="logo-text">AUTO MOTO LUXE Location</span>
+            </div>
+            <!-- Menu mobile -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu mobile">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Menu principal -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="Home.html" class="nav-link active"><i class="fas fa-home"></i> <span>Accueil</span></a></li>
+                <li><a href="voiture.html" class="nav-link"><i class="fas fa-car"></i> <span>Voitures</span></a></li>
+                <li><a href="moto.html" class="nav-link"><i class="fas fa-motorcycle"></i> <span>Motos</span></a></li>
+                <li><a href="#reviews" class="nav-link"><i class="fas fa-star"></i> <span>Avis</span></a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-phone"></i> <span>Contact</span></a></li>
+            </ul>
+            <!-- Bouton compte -->
+            <div class="nav-actions">
+                <button class="btn-nav" id="accountBtn" aria-label="compte">
+                    <i class="fas fa-user"></i>
+                    <span>User</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal de compte -->
+    <div class="account-modal" id="accountModal"></div>
+
+    <!-- Hero Slider -->
+    <div class="container">
+        <div class="hero-slider" id="heroSlider">
+            <div class="slide active" 
+                 style="background-image: url('https://images.unsplash.com/photo-1507136566006-cfc505b114fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')"
+                 data-src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80">
+                <div class="slide-content">
+                    <h2>Location de Véhicules Prestige</h2>
+                    <p>Découvrez notre collection exclusive de voitures et motos haut de gamme pour des expériences de conduite inoubliables.</p>
+                    <a href="voiture.html" class="btn-primary">
+                        <i class="fas fa-car"></i>
+                        Découvrir la collection
+                    </a>
+                </div>
+            </div>
+            
+            <div class="slide" 
+                 style="background-image: url('https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')"
+                 data-src="https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80">
+                <div class="slide-content">
+                    <h2>Voitures de Luxe</h2>
+                    <p>Parcourez notre sélection de supercars et berlines premium pour toutes occasions spéciales.</p>
+                    <a href="voiture.html" class="btn-primary">
+                        <i class="fas fa-search"></i>
+                        Voir les voitures
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Slider Moto en 3ème position -->
+            <div class="slide" 
+                 style="background-image: url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')"
+                 data-src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80">
+                <div class="slide-content">
+                    <h2>Motos d'Exception</h2>
+                    <p>Expérimentez la puissance et l'élégance avec notre gamme de motos sportives et custom.</p>
+                    <a href="moto.html" class="btn-primary">
+                        <i class="fas fa-motorcycle"></i>
+                        Explorer les motos
+                    </a>
+                </div>
+            </div>
+            
+            <div class="slider-dots" id="sliderDots">
+                <span class="dot active" data-slide="0" aria-label="Aller au slide 1"></span>
+                <span class="dot" data-slide="1" aria-label="Aller au slide 2"></span>
+                <span class="dot" data-slide="2" aria-label="Aller au slide 3"></span>
+            </div>
+            
+            <button class="slider-arrow prev" id="prevSlide" aria-label="Slide précédent">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-arrow next" id="nextSlide" aria-label="Slide suivant">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container">
+        <section class="features-section">
+            <div class="section-header">
+                <h2 class="section-title">Pourquoi Nous Choisir ?</h2>
+                <p class="section-subtitle">Découvrez les avantages de louer avec Auto Moto Luxe Location</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Assurance Complète</h3>
+                    <p>Tous nos véhicules sont entièrement assurés pour votre tranquillité d'esprit.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Entretien Régulier</h3>
+                    <p>Notre flotte est maintenue en parfait état par des professionnels qualifiés.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Service 24/7</h3>
+                    <p>Notre équipe est disponible 24h/24 et 7j/7 pour vous assister.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <h3>Meilleur Prix Garanti</h3>
+                    <p>Des tarifs compétitifs sans compromis sur la qualité du service.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3>Livraison sur Site</h3>
+                    <p>Nous livrons votre véhicule à l'adresse de votre choix dans Marrakech.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Véhicules Premium</h3>
+                    <p>Une sélection rigoureuse des meilleures marques automobiles et motocyclistes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews-section" id="reviews">
+            <div class="section-header">
+                <h2 class="section-title">Avis Clients</h2>
+                <p class="section-subtitle">Ce que nos clients disent de nous</p>
+            </div>
+            <!-- Tri des avis -->
+            <div class="reviews-sort">
+                <select id="reviewSort">
+                    <option value="recent">Plus récents</option>
+                    <option value="rating-desc">Meilleures notes</option>
+                    <option value="rating-asc">Moins bonnes notes</option>
+                </select>
+            </div>
+            <div class="reviews-grid" id="reviewsContainer">
+                <!-- Avis chargés dynamiquement -->
+            </div>
+            <!-- Formulaire pour ajouter un avis -->
+            <div class="add-review-form">
+                <h3>Donnez votre avis</h3>
+                <form id="reviewForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reviewName">Votre nom *</label>
+                            <input type="text" id="reviewName" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reviewEmail">Votre email</label>
+                            <input type="email" id="reviewEmail" placeholder="votre@email.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Note *</label>
+                        <div class="star-rating">
+                            <div class="stars" aria-label="Noter de 1 à 5 étoiles">
+                                <i class="far fa-star" data-value="1" role="button" tabindex="0"></i>
+                                <i class="far fa-star" data-value="2" role="button" tabindex="0"></i>
+                                <i class="far fa-star" data-value="3" role="button" tabindex="0"></i>
+                                <i class="far fa-star" data-value="4" role="button" tabindex="0"></i>
+                                <i class="far fa-star" data-value="5" role="button" tabindex="0"></i>
+                            </div>
+                            <span class="rating-text">Note: <span id="ratingValue">0</span>/5</span>
+                            <input type="hidden" id="rating" name="rating" value="0" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reviewText">Votre avis *</label>
+                        <textarea id="reviewText" placeholder="Partagez votre expérience..." rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="reviewVehicle">Véhicule loué (optionnel)</label>
+                        <input type="text" id="reviewVehicle" placeholder="Ex: Ferrari F8 Tributo">
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i> Publier mon avis
+                    </button>
+                </form>
+            </div>
+        </section>
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <h2 class="section-title">Notre Impact</h2>
+            <p class="section-subtitle">Des chiffres qui parlent d'eux-mêmes</p>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="number">50+</span>
+                    <span class="label">Véhicules</span>
+                </div>
+                <div class="stat-item">
+                    <span class="number">1000+</span>
+                    <span class="label">Clients Satisfaits</span>
+                </div>
+                <div class="stat-item">
+                    <span class="number">98%</span>
+                    <span class="label">Taux de Satisfaction</span>
+                </div>
+                <div class="stat-item">
+                    <span class="number">24/7</span>
+                    <span class="label">Service Client</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Footer -->
+    <footer class="premium-footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-container">
+                            <div class="logo">
+                                <img src="images/logo auto moto.png" alt="Logo Auto Moto Luxe" loading="lazy">
+                            </div>
+                        </div>
+                        <span>AUTO MOTO LUXE Location</span>
+                    </div>
+                    <p>L'excellence automobile et motocycliste à portée de main.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <span class="social-handle">@AutoMotoLuxeLocation</span>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="https://www.google.com/maps/place/Marrakech,+Morocco/" target="_blank" class="address-link">
+                                Marrakech, Maroc
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+212657103720" class="phone-link">
+                                +212 657 10 37 20
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:AutoMotoLuxeLocation@gmail.com" class="email-link">
+                                AutoMotoLuxeLocation@gmail.com
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Assistance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Auto Moto Luxe Location. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <div id="notificationContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
